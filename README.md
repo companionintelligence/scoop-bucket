@@ -1,6 +1,9 @@
-# companionintelligence/scoop-bucket
+<h1 align="center">Companion Intelligence Scoop Bucket</h1>
 
-Scoop bucket for Companion Intelligence desktop apps.
+<p align="center"><strong>Scoop bucket for Companion Intelligence desktop apps.</strong></p>
+
+<p align="center"><a href="#install-companion-hub-windows">Get started</a></p>
+
 
 ## Install Companion Hub (Windows)
 
