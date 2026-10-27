@@ -2,7 +2,7 @@
 
 <p align="center"><strong>Scoop bucket for Companion Intelligence desktop apps.</strong></p>
 
-<p align="center"><a href="#install-companion-hub-windows">Get started</a></p>
+<p align="center"><a href="#install-companion-hub-windows">Get started</a> · <a href="https://docs.ci.computer/docs/reference/open-source-systems">Systems map</a></p>
 
 
 ## Install Companion Hub (Windows)
