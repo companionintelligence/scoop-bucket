@@ -1,0 +1,34 @@
+{
+  "version": "0.1.3",
+  "description": "Private, self-hosted memory for your digital life and your AI agents",
+  "homepage": "https://ci.computer/memory",
+  "license": {
+    "identifier": "PolyForm-Noncommercial-1.0.0",
+    "url": "https://polyformproject.org/licenses/noncommercial/1.0.0"
+  },
+  "notes": "Companion Memory runs its server in Docker. Install and start Docker Desktop (or another Docker engine with Compose 2.24.4 or newer) before you open the app. The first launch pulls the app's container images (about 3 GB) and, if no Ollama is running or on your PATH, downloads Ollama and up to two models. Uninstalling the app does not stop its containers or delete the Docker volumes that hold your memory; choose Stop Stack in the app's tray menu first if you want the containers stopped.",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/companionintelligence/Companion-Memory/releases/download/desktop-v0.1.3/Companion.Memory_0.1.3_x64-setup.exe#/dl.exe",
+      "hash": "2672b2819e263545b39b14fa6fb158c40fbdc07ef6748eccb459e2ee74338aa7"
+    }
+  },
+  "installer": {
+    "file": "dl.exe",
+    "args": ["/S"]
+  },
+  "uninstaller": {
+    "script": "Write-Host 'Companion Memory was installed by its own setup program, so Scoop cannot remove it. To uninstall it, use Windows Settings > Apps > Companion Memory.'"
+  },
+  "checkver": {
+    "url": "https://github.com/companionintelligence/Companion-Memory/releases",
+    "regex": "tag/desktop-v([\\d.]+)\""
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/companionintelligence/Companion-Memory/releases/download/desktop-v$version/Companion.Memory_$version_x64-setup.exe#/dl.exe"
+      }
+    }
+  }
+}
