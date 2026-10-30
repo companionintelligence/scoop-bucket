@@ -1,0 +1,26 @@
+{
+  "version": "0.1.3",
+  "description": "Private, self-hosted memory for your digital life and your AI agents",
+  "homepage": "https://ci.computer/memory",
+  "license": {
+    "identifier": "PolyForm-Noncommercial-1.0.0",
+    "url": "https://polyformproject.org/licenses/noncommercial/1.0.0/"
+  },
+  "notes": "Companion Memory runs its server in Docker. Install and start Docker Desktop (or another Docker engine with Compose 2.24.4 or newer) before you open the app.",
+  "url": "https://github.com/companionintelligence/Companion-Memory/releases/download/desktop-v0.1.3/Companion.Memory_0.1.3_x64-setup.exe#/dl.exe",
+  "hash": "2672b2819e263545b39b14fa6fb158c40fbdc07ef6748eccb459e2ee74338aa7",
+  "installer": {
+    "file": "dl.exe",
+    "args": ["/S"]
+  },
+  "uninstaller": {
+    "script": "Write-Host 'Use Windows Settings > Apps to uninstall Companion Memory if the silent uninstall does not complete.'"
+  },
+  "checkver": {
+    "url": "https://github.com/companionintelligence/Companion-Memory/releases",
+    "regex": "tag/desktop-v([\\d.]+)"
+  },
+  "autoupdate": {
+    "url": "https://github.com/companionintelligence/Companion-Memory/releases/download/desktop-v$version/Companion.Memory_$version_x64-setup.exe#/dl.exe"
+  }
+}
