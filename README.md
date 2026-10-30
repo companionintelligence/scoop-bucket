@@ -45,7 +45,18 @@ scoop install companion-hub
 scoop update companion-hub
 ```
 
-Manifests are generated from [CI-Hub `distribution/`](https://github.com/companionintelligence/CI-Hub/tree/dev/distribution) on each desktop release.
+`companion-hub.json` is generated from [Companion-Hub `distribution/`](https://github.com/companionintelligence/Companion-Hub/tree/dev/distribution) on each Hub desktop release. The other manifests in this bucket (`companion-memory`, `companion-capture`) are maintained by hand.
+
+## Install Companion Memory (Windows)
+
+Companion Memory runs its server in Docker: install and start Docker Desktop (or another Docker engine with Compose 2.24.4 or newer) first. The first launch pulls about 3 GB of container images.
+
+```powershell
+scoop bucket add companionintelligence https://github.com/companionintelligence/scoop-bucket
+scoop install companion-memory
+```
+
+Update with `scoop update companion-memory`. The manifest is bumped by hand for each `desktop-v*` [release](https://github.com/companionintelligence/Companion-Memory/releases). Companion Memory is installed by its own setup program, so Scoop cannot remove it: uninstall it from Windows Settings > Apps. Uninstalling does not stop its containers or delete the Docker volumes that hold your memory.
 
 <!-- companion-hub-readme-deep-review -->
 
