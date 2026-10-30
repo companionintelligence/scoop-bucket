@@ -6,7 +6,7 @@
     "identifier": "PolyForm-Noncommercial-1.0.0",
     "url": "https://polyformproject.org/licenses/noncommercial/1.0.0"
   },
-  "notes": "Companion Memory runs its server in Docker. Install and start Docker Desktop (or another Docker engine with Compose 2.24.4 or newer) before you open the app. The first launch pulls the app's container images (about 3 GB) and, if no Ollama is running or on your PATH, downloads Ollama and two models. Uninstalling the app does not stop its containers or delete the Docker volumes that hold your memory; choose Stop Stack in the app's tray menu first if you want the containers stopped.",
+  "notes": "Companion Memory runs its server in Docker. Install and start Docker Desktop (or another Docker engine with Compose 2.24.4 or newer) before you open the app. The first launch pulls the app's container images (about 3 GB) and, if no Ollama is running or on your PATH, downloads Ollama and up to two models. Uninstalling the app does not stop its containers or delete the Docker volumes that hold your memory; choose Stop Stack in the app's tray menu first if you want the containers stopped.",
   "architecture": {
     "64bit": {
       "url": "https://github.com/companionintelligence/Companion-Memory/releases/download/desktop-v0.1.3/Companion.Memory_0.1.3_x64-setup.exe#/dl.exe",
