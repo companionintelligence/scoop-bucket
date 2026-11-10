@@ -1,0 +1,21 @@
+name: Check manifests
+
+# Manual only, like the other workflows in the org's CI. Run it with:
+#   gh workflow run check-manifests.yml --repo companionintelligence/scoop-bucket
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Check manifests against release assets
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 tools/check-manifests.py
