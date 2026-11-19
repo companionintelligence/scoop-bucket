@@ -1,5 +1,5 @@
 {
-  "version": "0.1.10",
+  "version": "2026.11.19",
   "description": "Private, self-hosted memory for your digital life and your AI agents",
   "homepage": "https://ci.computer/memory",
   "license": {
@@ -10,8 +10,8 @@
   "notes": "Companion Memory runs its server in Docker. Install and start Docker Desktop (or another Docker engine with Compose 2.24.4 or newer) before you open the app. The first launch pulls the app's container images (about 3 GB) and, if no Ollama is running or on your PATH, downloads Ollama and up to two models. Uninstalling the app does not stop its containers or delete the Docker volumes that hold your memory; choose Stop Stack in the app's tray menu first if you want the containers stopped.",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/companionintelligence/Companion-Memory/releases/download/desktop-v0.1.10/Companion.Memory_0.1.10_x64-setup.exe#/dl.exe",
-      "hash": "408c1d1aae7bc3f6cbe2b6ee89ae451f33f193fc4ed6bfc3dd0a6c94f78282df"
+      "url": "https://github.com/companionintelligence/Companion-Memory/releases/download/desktop-v2026.11.19/Companion.Memory_2026.11.19_x64-setup.exe#/dl.exe",
+      "hash": "c798f021fe5532374ef9d41b0c2e93fcc95cf3543463e13eaec5c129a143e182"
     }
   },
   "installer": {
